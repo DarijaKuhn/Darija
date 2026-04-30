@@ -1,6 +1,6 @@
 import os
 import requests
-#BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 
 GROUP_ID = os.getenv("GROUP_ID") # group chat id where all personal account were added

@@ -5,15 +5,15 @@ from dotenv import load_dotenv
 import requests
 
 load_dotenv()
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+#BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # CHAT_ID = "6638930722" # personal chat id
-GROUP_ID = "1250991331"  # group chat id where all personal account were added
+GROUP_ID = os.getenv("GROUP_ID") # group chat id where all personal account were added
 
-if BOT_TOKEN is None:
-    print("❌ Error: BOT_TOKEN is not set in the environment.")
-else:
-    print(f"✅ Success! Token starts with: {BOT_TOKEN[:5]}...")
+#if BOT_TOKEN is None:
+   # print("❌ Error: BOT_TOKEN is not set in the environment.")
+#else:
+    #print(f"✅ Success! Token starts with: {BOT_TOKEN[:5]}...")
 
 
 def send_telegram_message(chat_id, text):

@@ -1,13 +1,10 @@
 import os
-from sqlite3.dbapi2 import paramstyle
-
-from dotenv import load_dotenv
 import requests
 
 load_dotenv()
 #BOT_TOKEN = os.getenv("BOT_TOKEN")
 
-# CHAT_ID = "6638930722" # personal chat id
+
 GROUP_ID = os.getenv("GROUP_ID") # group chat id where all personal account were added
 
 #if BOT_TOKEN is None:
